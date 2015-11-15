@@ -1,0 +1,87 @@
+//
+// Prefix header for all source files of the 'BoandaProject' target in the 'BoandaProject' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+#define DLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+
+#else
+#define DLog(...) do { } while (0)
+#endif
+
+#define kSettingGPSConfig @"Setting_GPS_Config" //是否上传用户位置信息配置
+#define kNotifyeSettingGPSConfig @"Notify_Setting_GPS_Config" //改变配置
+#define kSettingNightGPSConfig @"Setting_Night_GPS_Config" //是否开启夜间模式
+#define kNotifyeSettingNightGPSConfig @"Notify_Night_Setting_GPS_Config" //改变夜间模式配置
+
+
+//数据同步完毕
+#define kNotifyDataSyncFininshed @"DataSyncFinished"
+#define kNotifyDataSyncFailed    @"kNotifyDataSyncFailed"
+
+#define kLastVersion   @"kLastVersion"
+
+//菜单数据同步完毕
+#define kMenuSyncFailed   @"kMenuSyncFailed"
+#define kMenuSyncFinished @"kMenuSyncFinished"
+
+
+#define kLastSyncDate @"LastSyncDate"
+#define kSkinChanged  @"kSkinChanged"
+#define KSkinColor @"KSkinColor"
+#define kReloginSystem @"kReloginSystem"
+
+#define KUserName @"KUserName"
+#define KUserPassword @"KUserPassword"
+#define KSavePwd @"KSavePwd"
+#define kLoadHbsc @"kLoadHbsc"
+#define kLastVersion @"kLastVersion" //上一个版本
+#define kLoginSyncDate @"LoginSyncDate"
+
+#define  COMMIT_BL_HJAQJCQKB        1018
+#define  QUERY_HJAQJCQKB_HISTORY 1019
+
+#define kFaWen_Type_Tag @"43000000009" //发文登记
+#define kNotice_Type_Tag @"f81e305a-2516-43c9-8002-b8801a087b0c" //通知公告
+#define kFaWen_Type_Tag @"43000000009" //发文登记
+
+
+#define LIGHT_BLUE_UICOLOR [UIColor colorWithRed:231.0/255 green:240.0/255 blue:236.0/255 alpha:1]
+
+#define ONE_PAGE_SIZE 25
+
+//如果定义此宏，表示记录请求的webservice，否则不记录
+#define Save_OperateLog 
+
+#define kLaiWen_Type_Tag @"7a6ef941-02a7-42f7-bebd-0cef3633b781" //来文登记
+
+
+#define UpdateUrl @"http://61.164.73.82:8800/ipadzhenhai/version.json"
+
+
+#define DOWNLOAD_URL @"http://61.164.73.82:8800/ipadzhenhai/updateApp.html"
+//执法相关
+#define kAlert_Choose     1 //选择确定、取消
+#define kAlert_GenXCZFBH 2 //现场执法编号
+//笔录相关
+#define Record_None      0 //没做任何处理
+#define Record_SaveLocal 11 //暂存在本地
+#define Record_Commited_Success 12 //提交记录成功
+#define Record_Commited_Failed  13 //提交记录失败
+
+#define HBSC_DB_NAME  @"hbsc_data" //环保手册数据库名称
+
+#if !__has_feature(objc_instancetype)
+#define instancetype id
+#endif

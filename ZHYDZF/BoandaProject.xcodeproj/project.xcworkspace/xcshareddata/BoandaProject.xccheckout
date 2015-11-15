@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CDC68A77-D26E-4402-8B35-9187CAAC3BA3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BoandaProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>79F7898F-9A80-4765-AFF6-BAFCBE0D17D8</key>
+		<string>http://2.2.2.200:81/svn/ios/YDZF/branches/YDZF_ZJ_ZhenHai</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BoandaProject.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>79F7898F-9A80-4765-AFF6-BAFCBE0D17D8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>79F7898F-9A80-4765-AFF6-BAFCBE0D17D8</key>
+		<string>http://2.2.2.200:81/svn/ios</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://2.2.2.200:81/svn/ios/YDZF/branches/YDZF_ZJ_ZhenHai/BoandaProject.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>79F7898F-9A80-4765-AFF6-BAFCBE0D17D8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>79F7898F-9A80-4765-AFF6-BAFCBE0D17D8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZHYDZF</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,71 @@
+
+dudelView = [[DudelView alloc] initWithFrame:CGRectMake(0, 0, 768, 1004-44-44)];
+dudelView.bDrawBgImage = YES;
+dudelView.delegate = self;
+dudelView.userInteractionEnabled = YES;
+dudelView.backgroundColor = [UIColor whiteColor];
+[self.view addSubview:dudelView];
+
+- (void)drawTemporary
+{
+    [tool drawTemporary];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [dudelView setNeedsDisplay];
+    [tool touchesBegan:touches withEvent:event];
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [dudelView setNeedsDisplay];
+    [tool touchesMoved:touches withEvent:event];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [dudelView setNeedsDisplay];
+    [tool touchesEnded:touches withEvent:event];
+}
+
+- (UIFont *)font
+{
+    return [UIFont systemFontOfSize:12];
+}
+
+- (UIColor *)strokeColor
+{
+    return [UIColor redColor];
+}
+
+- (UIColor *)fillColor
+{
+    return [UIColor whiteColor];
+}
+
+- (CGFloat)strokeWidth
+{
+    return 5;
+}
+
+- (void)addDrawable:(id<Drawable>)d
+{
+    [dudelView.drawables addObject:d];
+    [dudelView setNeedsDisplay];
+}
+
+- (void)addTextLabel:(UITextView *)aLabel
+{
+    
+}
+
+- (UIView *)viewForUseWithTool:(id<Tool>)t
+{
+    return dudelView;
+}
+
+- (UIView *)viewForOwner:(id<Tool>)t
+{
+    return self.view;
+}
